@@ -21,9 +21,11 @@ function Home() {
 			<h1 className="text-5xl font-black">Nuit et Jour</h1>
 			<p>{t('welcome')}</p>
 			<p>{t('greeting', { name: 'Michel' })}</p>
-			<button onClick={() => i18n.changeLanguage('fr')}>FR</button>
-			<button onClick={() => i18n.changeLanguage('en')}>EN</button>
-
+			<div className="flex items-center gap-2">
+				<button className="px-3 py-1 bg-gray-200 rounded" onClick={() => i18n.changeLanguage('fr')}>FR</button>
+				<button className="px-3 py-1 bg-gray-200 rounded" onClick={() => i18n.changeLanguage('en')}>EN</button>
+			</div>
+			
 		</div>
 	);
 }

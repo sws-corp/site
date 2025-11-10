@@ -27,7 +27,7 @@ bun i
 bun dev
 
 # Build for production
-bun build
+bun run build
 ```
 
 ### About Nuit de l'Info
