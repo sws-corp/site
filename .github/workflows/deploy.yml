@@ -2,7 +2,7 @@
 
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
 
 jobs:
   deploy:
@@ -20,7 +20,7 @@ jobs:
           export PATH="$BUN_INSTALL/bin:$PATH"
           export PM2_HOME=/etc/pm2daemon
           cd /var/www/site
-          git fetch origin && git reset --hard origin/master
+          git fetch origin && git reset --hard origin/main
           bun install
           bun run build
-          bunx pm2 reload site
+          bunx pm2 reload site-backend
