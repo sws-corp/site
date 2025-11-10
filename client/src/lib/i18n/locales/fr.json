@@ -3,5 +3,24 @@
   "greeting": "Bonjour, {{name}}!",
   "404": {
     "message": "Page introuvable"
+  },
+  "landing":{
+    "nav":{
+      "team":"L'équipe",
+      "contest":"Concours",
+      "mission":"Mission",
+      "blog":"Blog",
+      "contact":"Contact"
+    },
+    "caps":"Guidés par la passion",
+    "title":"Construisons un avenir radieux ensemble",
+    "subtitle":"De la conception à la mise en production, SWS conçoit des outils fiables et performants pour un numérique plus sûr et plus intelligent.",
+    "button-learn":"en savoir plus",
+    "countdown": {
+      "mins": "Commence dans {{minutes}} minutes",
+      "hours": "Commence dans {{hours}} heures",
+      "days": "Commence dans {{days}} jours",
+      "started-since": "À commencé il y a {{minutesSinceStart}} minutes"
+    }
   }
 }

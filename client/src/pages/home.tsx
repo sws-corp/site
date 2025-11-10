@@ -1,15 +1,16 @@
-import logo from "@/assets/n&j.svg";
+/*import logo from "@/assets/n&j.svg";
 import { useTranslation } from 'react-i18next';
 import { useLanguageRouter } from '@/hooks/use-language-router';
-import { Link } from 'react-router';
+import { Link } from 'react-router';*/
+import Hero from "@/components/landing/sections/hero"
 
 function Home() {
-	const { t } = useTranslation();
-	const { currentLanguage, changeLanguage } = useLanguageRouter();
+	//const { t } = useTranslation();
+	//const { currentLanguage, changeLanguage } = useLanguageRouter();
 
 	return (
-		<div className="max-w-xl mx-auto flex flex-col gap-6 items-center justify-center min-h-screen">
-			<a
+		<div>
+			{/*<a
 				href="https://github.com/sws-corp/nuit-et-jour"
 				target="_blank"
 				rel="noopener"
@@ -40,7 +41,8 @@ function Home() {
 			
 			<Link to={`/${currentLanguage}/test`} className="text-red-500 underline">
 				Page de test
-			</Link>
+			</Link>*/}
+			<Hero/>
 		</div>
 	);
 }
