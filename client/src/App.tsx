@@ -1,12 +1,15 @@
 import { BrowserRouter, Routes, Route } from "react-router";
-import Home from "./components/Home";
+import { LanguageMiddleware } from "./middleware";
+import { Home } from "./pages";
 
 function App() {
 	return (
 		<BrowserRouter>
-			<Routes>
-				<Route path="/" element={<Home />} />
-			</Routes>
+			<LanguageMiddleware>
+				<Routes>
+					<Route path="/:lang" element={<Home />} />
+				</Routes>
+			</LanguageMiddleware>
 		</BrowserRouter>
 	);
 }
