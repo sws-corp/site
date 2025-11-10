@@ -1,4 +1,7 @@
 {
   "welcome": "Welcome",
-  "greeting": "Hello, {{name}}!"
+  "greeting": "Hello, {{name}}!",
+  "404": {
+    "message": "Page not found"
+  }
 }

@@ -1,5 +1,6 @@
 import { useEffect, useState, type PropsWithChildren } from 'react';
 import { useNavigate, useLocation } from 'react-router';
+import { useTranslation } from 'react-i18next';
 import { SUPPORTED_LANGUAGES, type SupportedLanguage, DEFAULT_LANGUAGE } from '@/lib/i18n/config';
 
 function isSupportedLanguage(lang: string): lang is SupportedLanguage {
@@ -14,6 +15,7 @@ function detectBrowserLanguage(): SupportedLanguage {
 export function LanguageMiddleware({ children }: PropsWithChildren) {
   const navigate = useNavigate();
   const location = useLocation();
+  const { i18n } = useTranslation();
   const [isChecking, setIsChecking] = useState(true);
 
   useEffect(() => {
@@ -25,10 +27,13 @@ export function LanguageMiddleware({ children }: PropsWithChildren) {
       const detectedLang = detectBrowserLanguage();
       const newPath = `/${detectedLang}${path === '/' ? '' : path}`;
       navigate(newPath, { replace: true });
-    } else {
+    } else { 
+      if (i18n.language !== langInUrl) {
+        i18n.changeLanguage(langInUrl);
+      }
       setIsChecking(false);
     }
-  }, [location.pathname, navigate]);
+  }, [location.pathname, navigate, i18n]);
 
   if (isChecking) {
     return null;
