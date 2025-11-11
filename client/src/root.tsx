@@ -1,16 +1,14 @@
 import { BrowserRouter, Routes, Route, isRouteErrorResponse } from "react-router";
-import { LanguageMiddleware } from "./middleware";
-import { Home } from "./pages";
-import { NotFoundPage } from "./features/not-found";
-import { TornadoTemporaire } from "./pages/tornado";
+import { LanguageMiddleware } from "./middleware"; 
+import { NotFoundPage } from "./features/not-found"; 
+import Index from "./pages";
 
 function App() {
 	return (
 		<BrowserRouter>
 			<LanguageMiddleware>
 				<Routes>
-					<Route path="/:lang" element={<Home />} />
-					<Route path="/:lang/tornado" element={<TornadoTemporaire />} />
+					<Route path="/:lang" element={<Index />} /> 
 					<Route path="*" element={<NotFoundPage />} />
 				</Routes>
 			</LanguageMiddleware>
