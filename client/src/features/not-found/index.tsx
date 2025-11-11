@@ -1,4 +1,4 @@
-import { WarpBackground } from "./warp-background";
+import { WarpBackground } from "./components/warp-background";
 import { motion } from "motion/react";
 import { useTranslation } from "react-i18next";
 

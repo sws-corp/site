@@ -5,8 +5,10 @@ import raspberry_pi from "@/assets/raspberry-pi.png"
 import joss_dog from "@/assets/joss-dog.png"
 import github_logo from "@/assets/github.png"
 
-import { Volume2 } from "lucide-react"
+import { Volume2, VolumeX } from "lucide-react"
 import { Button } from "@/components/shadcn/button"
+import RetroGame from "@/features/retro"
+import { useState } from "react"
 
 export function TeamMemberCard({ name, description }: { name: string, description: string }) {
     return <div className=" flex-1 flex items-center justify-center gap-1 flex-col">
@@ -44,12 +46,14 @@ export function Team() {
 }
 
 export function OurAwards() {
+    const [isMuted, setIsMuted] = useState(true);
+
     return  <div className="w-full ">
 
             <div className="flex flex-col gap-3 p-10 justify-center items-center">
                 <Badge text="our awards" />
                 <h1 className="text-[24px] leading-[29px] font-medium">We have already proven ourselves</h1>
-                <p className="text-muted-foreground text-[16px] leading-[20px]">We won the Gold Medal in the “On veut du gros pixel” challenge.</p>
+                <p className="text-muted-foreground text-[16px] leading-[20px]">We won the Gold Medal in the "On veut du gros pixel" challenge.</p>
             </div>
 
             <div className="w-full h-[625px] grid grid-cols-2 gap-8 ">
@@ -93,14 +97,27 @@ export function OurAwards() {
                     <img src={gradient_award_game} alt="Gradient" className="size-full" />
                   
                     <div className="absolute size-full flex items-center  justify-center top-0 left-0">
-                        <div className="w-[271px] h-[361px] bg-background/30 backdrop-blur rounded-lg">
-                            {/* Le jeu ici @tsu */}
+                        <div 
+                            className="w-[271px] h-[361px] backdrop-blur-[11px]"
+                            style={{
+                                backgroundImage: 'linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%)',
+                                boxShadow: '0 8px 34px -3px rgba(18, 29, 31, 0.65)'
+                            }}
+                        >
+                            <RetroGame isMuted={isMuted} />
                         </div>
                     </div>
 
-                    <div className="absolute bottom-5 right-5 bg-background/20 backdrop-blur  px-3 py-1 rounded-full ">
-                        <Volume2 className="text-white size-5" />
-                    </div>
+                    <button 
+                        onClick={() => setIsMuted(!isMuted)}
+                        className="absolute bottom-5 right-5 bg-background/20 backdrop-blur px-3 py-1 rounded-full hover:bg-background/30 transition-colors cursor-pointer"
+                    >
+                        {isMuted ? (
+                            <VolumeX className="text-white size-5" />
+                        ) : (
+                            <Volume2 className="text-white size-5" />
+                        )}
+                    </button>
                 </div>
 
             </div>

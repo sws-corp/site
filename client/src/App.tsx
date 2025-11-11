@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route, isRouteErrorResponse } from "react-router";
 import { LanguageMiddleware } from "./middleware";
 import { Home } from "./pages";
-import { NotFoundPage } from "./components/not-found-page";
+import { NotFoundPage } from "./features/not-found";
 import { TornadoTemporaire } from "./pages/tornado";
 
 function App() {
