@@ -13,9 +13,56 @@
       "contact":"Contact"
     },
     "caps":"Driven by passion",
-    "title":"Shaping Tomorrow’s Software",
+    "title":"Building a Better Future, Together",
     "subtitle":"From design to production, SWS designs reliable \n and high-performance tools for a safer and smarter digital world.",
     "button-learn":"Learn more",
+    "team": {
+      "badge": "The team",
+      "title": "Discover the SWS team",
+      "subtitle": "A team of professionals",
+      "members": {
+        "remy": {
+          "role": "Chief Operating Officer"
+        },
+        "jossua": {
+          "role": "Chief Executive Officer"
+        },
+        "thomas": {
+          "role": "Chief Gaming Officer"
+        },
+        "kadir": {
+          "role": "Chief Technology Officer"
+        }
+      }
+    },
+    "awards": {
+      "badge": "Our awards",
+      "title": "We have already proven ourselves",
+      "subtitle": "We won the Gold Medal in the \"On veut du gros pixel\" challenge.",
+      "game": {
+        "title": "Meet Ocean Protector",
+        "description": "Play as a brave dolphin! Your mission is to protect marine life. Swim through deep waters, avoid falling polluting waste️, and catch as many fish as possible to increase your score. Hang in there, because the challenge gets faster every second!",
+        "author": "Author",
+        "price": "Price",
+        "priceValue": "Kit Starter Raspberry Pi 5 Recalbox",
+        "theme": "Theme",
+        "themeValue": "Add a retro touch to your productions!",
+        "participants": "Number of teams that participated"
+      }
+    },
+    "github": {
+      "title": "Checkout the repo!",
+      "description": "The repo includes a fully configured stack using Bun, Hono, Vite, and React optimized for speed and simplicity. Just clone, install, and run!",
+      "button": "Fork on Github"
+    },
+    "stacks": {
+      "badge": "Our STACKS",
+      "title": "Crafted with Modern Tools",
+      "subtitle": "A modern blend of tools designed for speed, simplicity, and developer happiness !"
+    },
+    "flowers": {
+      "text": "Hosted and designed in France, <bold>100% Human generated</bold> 😊"
+    },
     "countdown": {
       "mins": "Started {{minutes}} minutes left",
       "hours": "Started {{hours}} hours left",

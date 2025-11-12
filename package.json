@@ -40,7 +40,6 @@
     "typescript": "^5.9.3"
   },
   "dependencies": {
-    "hono": "^4.10.4",
-    "tailwind-clamp": "^4.1.0"
+    "hono": "^4.10.4"
   }
 }

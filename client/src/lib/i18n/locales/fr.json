@@ -13,9 +13,56 @@
       "contact":"Contact"
     },
     "caps":"Guidés par la passion",
-    "title":"Façonner les logiciels de demain",
+    "title":"Building a Better Future, Together",
     "subtitle":"De la conception à la mise en production, SWS conçoit des outils fiables et performants pour un numérique plus sûr et plus intelligent.",
-    "button-learn":"en savoir plus",
+    "button-learn":"En Savoir Plus",
+    "team": {
+      "badge": "L'équipe",
+      "title": "Découvrez l'équipe SWS",
+      "subtitle": "Une équipe de professionnels",
+      "members": {
+        "remy": {
+          "role": "Directeur des Opérations"
+        },
+        "jossua": {
+          "role": "Directeur Général"
+        },
+        "thomas": {
+          "role": "Directeur du Gaming"
+        },
+        "kadir": {
+          "role": "Directeur Technique"
+        }
+      }
+    },
+    "awards": {
+      "badge": "Nos récompenses",
+      "title": "Nous avons déjà fait nos preuves",
+      "subtitle": "Nous avons remporté la médaille d'or au défi \"On veut du gros pixel\".",
+      "game": {
+        "title": "Ocean Protector",
+        "description": "Incarnez un dauphin courageux ! Votre mission est de protéger la vie marine. Nagez dans les eaux profondes, évitez les déchets polluants qui tombent️, et attrapez autant de poissons que possible pour augmenter votre score. Accrochez-vous, car le défi devient plus rapide à chaque seconde !",
+        "author": "Auteur",
+        "price": "Prix",
+        "priceValue": "Kit Starter Raspberry Pi 5 Recalbox",
+        "theme": "Thème",
+        "themeValue": "Ajoutez une touche rétro à vos productions !",
+        "participants": "Nombre d'équipes participantes"
+      }
+    },
+    "github": {
+      "title": "Découvrez le repo !",
+      "description": "Le repo comprend une stack entièrement configurée utilisant Bun, Hono, Vite et React, optimisée pour la vitesse et la simplicité. Il suffit de cloner, installer et exécuter !",
+      "button": "Fork sur Github"
+    },
+    "stacks": {
+      "badge": "NOTRE STACKS",
+      "title": "Conçu avec des outils modernes",
+      "subtitle": "Un mélange moderne d'outils conçus pour la rapidité, la simplicité et le bonheur des développeurs !"
+    },
+    "flowers": {
+      "text": "Hébergé et conçu en France, <bold>100% généré par des humains</bold> 😊"
+    },
     "countdown": {
       "mins": "Commence dans {{minutes}} minutes",
       "hours": "Commence dans {{hours}} heures",

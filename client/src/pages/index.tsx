@@ -6,6 +6,8 @@ import { GithubCTA } from "@/features/landing/sections/github";
 import Flowers from '../features/landing/sections/flowers';
 import { HorizontallBand } from '../features/landing/components/grid';
 import { useWindowSize } from '../hooks/use-window-size';
+import ScrollReveal from '@/components/global/scroll-reveal';
+import { Stacks } from "@/features/landing/sections/stacks";
 
 export default function Index() { 
 	const [width] = useWindowSize()
@@ -15,20 +17,28 @@ export default function Index() {
 	const band_height = is_mobile ? 50 : is_tablet ? 60 : 80
 	const band_count = is_mobile ? 60 : is_tablet ? 80 : 100
 	return (
-		<>
-		<Hero/>
-		<GridWrapper>  
-			
-            <VerticalBand  height={band_height} count={band_count}  />
-			<Team />
-			<VerticalBand height={band_height} count={band_count} />
-            <OurAwards />
-			<VerticalBand height={band_height} count={band_count} />
-			<Flowers/>
-			<HorizontallBand/>
-            <GithubCTA />
-            <VerticalBand height={band_height} count={band_count} />
-		</GridWrapper>
-		</>
+		<div className="flex flex-col clamp-[gap,2rem,4rem]">
+			<Hero/>
+			<GridWrapper>  
+				
+				<ScrollReveal>
+					<Team />
+				</ScrollReveal>
+				<VerticalBand height={band_height} count={band_count} />
+				<ScrollReveal delay={0.1}>
+					<OurAwards />
+				</ScrollReveal>
+				<VerticalBand height={band_height} count={band_count} />
+				<ScrollReveal delay={0.2}>
+					<Flowers/>
+				</ScrollReveal>
+				<HorizontallBand/>
+				<ScrollReveal delay={0.3}>
+					<Stacks />
+					<GithubCTA />
+				</ScrollReveal>
+				<VerticalBand height={band_height} count={band_count} />
+			</GridWrapper>
+		</div>
 	);
 }

@@ -121,3 +121,20 @@
     @apply bg-background text-foreground;
   }
 }
+
+.card-bun:hover ~ * .flow-bun,
+.card-hono:hover ~ * .flow-hono,
+.card-vite:hover ~ * .flow-vite,
+.card-react:hover ~ * .flow-react {
+  opacity: 1 !important;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
