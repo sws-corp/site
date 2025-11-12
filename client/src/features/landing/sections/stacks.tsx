@@ -28,7 +28,7 @@ export function Stacks() {
 
                 </div>
 
-                <div className="w-full grid grid-cols-2 md:grid-cols-4 border border-border divide-x divide-y md:divide-y-0">
+                <div className="w-full grid grid-cols-2 md:grid-cols-4  border-t border-l divide-x divide-y md:divide-y-0 border-b-0 md:border-b-2">
                     <div 
                         className="h-[120px] md:h-[165px] flex flex-col items-center justify-center gap-2 cursor-pointer transition-colors md:hover:bg-[#FF6164]/10"
                         onClick={() => window.open('https://bun.sh', '_blank')}
@@ -63,7 +63,7 @@ export function Stacks() {
                         <p className="text-muted-foreground text-[16px] md:text-[18px] leading-[24px] md:leading-[27px]">Vite</p>
                     </div>
                     <div 
-                        className="h-[120px] md:h-[165px] flex flex-col items-center justify-center gap-2 cursor-pointer transition-colors md:hover:bg-[#61DAFB]/10"
+                        className="border-r md:border-b-0 border-b-2 h-[120px] md:h-[165px] flex flex-col items-center justify-center gap-2 cursor-pointer transition-colors md:hover:bg-[#61DAFB]/10"
                         onClick={() => window.open('https://react.dev', '_blank')}
                         onMouseEnter={() => setHoveredCard('react')}
                         onMouseLeave={() => setHoveredCard(null)}
@@ -81,7 +81,7 @@ export function Stacks() {
                 </div>
 
                 <div 
-                    className="w-full md:w-fit border-x-2 border-b-2 md:border-t-2 border-border h-[120px] md:h-[165px] px-8 md:px-14 flex flex-col items-center justify-center gap-2 cursor-pointer relative overflow-hidden group"
+                    className="w-full md:w-fit border-x border-b md:border-t h-[120px] md:h-[165px] px-8 md:px-14 flex flex-col items-center justify-center gap-2 cursor-pointer relative overflow-hidden group"
                     onClick={() => window.open('https://github.com/sws-corp/nuit-et-jour', '_blank')}
                     onMouseEnter={() => setHoveredCard('all')}
                     onMouseLeave={() => setHoveredCard(null)}
