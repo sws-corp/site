@@ -15,8 +15,10 @@ export default function Index() {
 	const band_height = is_mobile ? 50 : is_tablet ? 60 : 80
 	const band_count = is_mobile ? 60 : is_tablet ? 80 : 100
 	return (
+		<>
+		<Hero/>
 		<GridWrapper>  
-			<Hero/>  
+			
             <VerticalBand  height={band_height} count={band_count}  />
 			<Team />
 			<VerticalBand height={band_height} count={band_count} />
@@ -27,5 +29,6 @@ export default function Index() {
             <GithubCTA />
             <VerticalBand height={band_height} count={band_count} />
 		</GridWrapper>
+		</>
 	);
 }
