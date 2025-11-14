@@ -64,9 +64,9 @@
       "text": "Hosted and designed in France, <bold>100% Human generated</bold> 😊"
     },
     "countdown": {
-      "mins": "Started {{minutes}} minutes left",
-      "hours": "Started {{hours}} hours left",
-      "days": "Started {{days}} days left",
+      "mins": "{{minutes}} minutes left",
+      "hours": "{{hours}} hours left",
+      "days": "{{days}} days left",
       "started-since": "Started {{minutesSinceStart}} minutes ago"
     }
   }

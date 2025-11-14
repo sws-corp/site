@@ -4,6 +4,7 @@
     "": {
       "name": "bhvr",
       "dependencies": {
+        "framer-motion": "^12.23.24",
         "hono": "^4.10.4",
       },
       "devDependencies": {

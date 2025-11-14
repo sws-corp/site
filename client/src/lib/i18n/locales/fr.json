@@ -64,10 +64,10 @@
       "text": "Hébergé et conçu en France, <bold>100% généré par des humains</bold> 😊"
     },
     "countdown": {
-      "mins": "Commence dans {{minutes}} minutes",
-      "hours": "Commence dans {{hours}} heures",
-      "days": "Commence dans {{days}} jours",
-      "started-since": "À commencé il y a {{minutesSinceStart}} minutes"
+      "mins": "{{minutes}} minutes restantes",
+      "hours": "{{hours}} heures restantes",
+      "days": "{{days}} jours restants",
+      "started-since": "commencé depuis {{minutesSinceStart}} minutes"
     }
   }
 }

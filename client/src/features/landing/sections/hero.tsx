@@ -39,10 +39,10 @@ export default function Hero() {
     };
 
     return (
-        <header className="bg-[radial-gradient(ellipse_at_top,_var(--background)_0%,_var(--background)_20%,_#e0ecff_100%)] h-[100vh] w-screen relative left-[50%] right-[50%] -mx-[50vw] overflow-clip">
+        <header className="bg-[radial-gradient(circle_at_top,_var(--background)_0%,_#e0ecff_60%)] sm:bg-[radial-gradient(ellipse_at_top,_var(--background)_0%,_var(--background)_20%,_#e0ecff_100%)] h-[100vh] w-screen relative left-[50%] right-[50%] -mx-[50vw] overflow-clip">
             <div className="relative h-full w-full md:px-[80px] px-4 flex flex-col gap-16 md:gap-24 lg:gap-32" >
                 <Navigation />
-                <div className="flex w-full justify-center items-center text-center flex-col gap-5 max-w-[85%] md:max-w-[500px] lg:max-w-[600px] mx-auto pb-8 relative z-10">
+                <div className="flex w-full h-screen justify-center items-center text-center flex-col gap-5 max-w-[85%] md:max-w-[500px] lg:max-w-[600px] mx-auto pb-8 relative z-10 mb-30">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
