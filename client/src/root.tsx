@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route, isRouteErrorResponse } from "react-router
 import { LanguageMiddleware } from "./middleware"; 
 import { NotFoundPage } from "./features/not-found"; 
 import Index from "./pages";
+import Elite from "./pages/elite";
 
 function App() {
 	return (
@@ -9,6 +10,7 @@ function App() {
 			<LanguageMiddleware>
 				<Routes>
 					<Route path="/:lang" element={<Index />} /> 
+					<Route path="/:lang/elite" element={<Elite />} />
 					<Route path="*" element={<NotFoundPage />} />
 				</Routes>
 			</LanguageMiddleware>
