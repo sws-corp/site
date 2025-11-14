@@ -8,6 +8,8 @@ export default function Navigation(){
     const [active, setActive] = useState(false);
     const [show, setShow] = useState(true);
     const [lastScroll, setLastScroll] = useState(0);
+    const nightInfoEnd = new Date("2025-12-05T08:04:00");
+    const [isNightInfo] = useState(nightInfoEnd > new Date());
 
     useEffect(() => {
     const handleScroll = () => {
@@ -43,11 +45,11 @@ export default function Navigation(){
                 <a href="#">{t('landing.nav.blog')}</a>
                 <a href="#">{t('landing.nav.contact')}</a>
                 <div className="w-full md:flex justify-end items-center md:hidden">
-                    <CountdownButton/>
+                    {isNightInfo && <CountdownButton />}
                 </div>
             </div>
             <div className="w-full hidden md:flex justify-end items-center">
-                <CountdownButton/>
+                {isNightInfo && <CountdownButton />}
             </div>
         </nav>
     )
