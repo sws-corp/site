@@ -4,6 +4,11 @@
   "404": {
     "message": "Page not found"
   },
+  "titles": {
+    "home": "SWS - Home",
+    "elite": "SWS - Elite",
+    "404": "SWS - Not Found"
+  },
   "landing":{
     "nav":{
       "team":"Team",

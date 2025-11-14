@@ -3,14 +3,17 @@ import { motion } from "motion/react";
 import { Terminal } from "lucide-react";
 import { codingTips } from "@/features/elite/tips";
 import { TipCard } from "@/features/elite/components/card";
+import { PDFGenerator } from "@/features/elite/components/pdf-generator";
+import { useDocumentTitle } from "@/hooks/use-document-title";
 
 export default function Elite() {
+  useDocumentTitle('titles.elite');
  
     return (
          <div className="min-h-screen bg-[#050505] text-white relative overflow-hidden">
           <MatrixRain 
           fontSize={20}
-          color="#00ff00"
+          color="#90CA03"
           characters="01"
           fadeOpacity={0.1}
           speed={1.0}
@@ -40,7 +43,7 @@ export default function Elite() {
           </div>
 
           <div className="flex justify-center mb-12">
-            {/* <PDFDownloadButton /> */}
+            <PDFGenerator />
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 px-4">
@@ -53,3 +56,5 @@ export default function Elite() {
         </div>
     );
 }
+
+export { Elite };

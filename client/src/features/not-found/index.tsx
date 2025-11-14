@@ -1,9 +1,11 @@
 import { WarpBackground } from "./components/warp-background";
 import { motion } from "motion/react";
 import { useTranslation } from "react-i18next";
+import { useDocumentTitle } from "@/hooks/use-document-title";
 
 export function NotFoundPage() {
 	const { t } = useTranslation();
+	useDocumentTitle('titles.404');
 
 	return (
 		<WarpBackground 

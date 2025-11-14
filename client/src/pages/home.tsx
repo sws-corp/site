@@ -8,8 +8,11 @@ import { HorizontallBand } from '../features/landing/components/grid';
 import { useWindowSize } from '../hooks/use-window-size';
 import ScrollReveal from '@/components/global/scroll-reveal';
 import { Stacks } from "@/features/landing/sections/stacks";
+import { useDocumentTitle } from "@/hooks/use-document-title";
 
-export default function Index() { 
+export default function Home() { 
+	useDocumentTitle('titles.home');
+	
 	const [width] = useWindowSize()
 	const is_mobile = width < 640
 	const is_tablet = width >= 640 && width < 1024
@@ -42,3 +45,5 @@ export default function Index() {
 		</div>
 	);
 }
+
+export { Home };

@@ -40,7 +40,6 @@
     "typescript": "^5.9.3"
   },
   "dependencies": {
-    "framer-motion": "^12.23.24",
-    "hono": "^4.10.4"
+    "hono": "^4.10.6"
   }
 }

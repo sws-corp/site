@@ -4,6 +4,11 @@
   "404": {
     "message": "Page introuvable"
   },
+  "titles": {
+    "home": "SWS - Accueil",
+    "elite": "SWS - Elite",
+    "404": "SWS - Introuvable"
+  },
   "landing":{
     "nav":{
       "team":"L'équipe",

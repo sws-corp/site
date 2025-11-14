@@ -1,20 +1,22 @@
 import { BrowserRouter, Routes, Route, isRouteErrorResponse } from "react-router";
 import { LanguageMiddleware } from "./middleware"; 
 import { NotFoundPage } from "./features/not-found"; 
-import Index from "./pages";
-import Elite from "./pages/elite";
+import { Home, Elite } from "@/pages/index";
+import { ThemeProvider } from "@/lib/theme";
 
 function App() {
 	return (
-		<BrowserRouter>
-			<LanguageMiddleware>
-				<Routes>
-					<Route path="/:lang" element={<Index />} /> 
-					<Route path="/:lang/elite" element={<Elite />} />
-					<Route path="*" element={<NotFoundPage />} />
-				</Routes>
-			</LanguageMiddleware>
-		</BrowserRouter>
+		<ThemeProvider defaultTheme="system">
+			<BrowserRouter>
+				<LanguageMiddleware>
+					<Routes>
+						<Route path="/:lang" element={<Home />} /> 
+						<Route path="/:lang/elite" element={<Elite />} />
+						<Route path="*" element={<NotFoundPage />} />
+					</Routes>
+				</LanguageMiddleware>
+			</BrowserRouter>
+		</ThemeProvider>
 	);
 }
 
