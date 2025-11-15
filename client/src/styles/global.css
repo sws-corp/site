@@ -137,12 +137,4 @@
     transform: rotate(360deg);
   }
 }
-
-/* Globe SVG color change in dark mode */
-img[src*="globe.svg"] {
-  filter: none;
-}
-
-.dark img[src*="globe.svg"] {
-  filter: invert(95%) sepia(5%) saturate(134%) hue-rotate(358deg) brightness(103%) contrast(94%);
-}
+ 

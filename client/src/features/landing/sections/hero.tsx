@@ -1,4 +1,4 @@
-import Navigation from "@/features/landing/layout/navigation"
+import Navigation from "@/features/landing/layout/navigation-bis"
 import { Badge } from "@/components/global/badge"
 import { useTranslation } from 'react-i18next';
 import { Button } from "@/components/shadcn/button";

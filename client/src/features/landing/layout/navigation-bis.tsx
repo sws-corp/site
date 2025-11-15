@@ -18,7 +18,7 @@ export default function Navigation() {
 
     useEffect(() => {
         return scrollYProgress.on("change", (v) => {
-            setScrolled(v > 0.3);
+            setScrolled(v > 0.05);
         });
     }, [scrollYProgress]);
 
@@ -58,7 +58,7 @@ export default function Navigation() {
         >
             <div className="w-full items-center flex">
                 <div className="w-full flex">
-                    <a href="/"><img src="/svg/logo-sws.svg" alt="logo sws" className="p-4 w-[120px]" /></a>
+                    <a href="/"><img src="/svg/logo-sws.svg" alt="logo sws" className="p-4 w-[120px] dark:invert" /></a>
                 </div>
                 {isMobile && (
                     <div className="flex justify-end">

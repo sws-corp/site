@@ -41,7 +41,7 @@ export function Team() {
             </div>
 
             <div className=" flex items-end  flex-1 justify-end   ">
-            <img src={globe} alt="Globe" className="clamp-[h,250px,304px]" draggable="false" />
+            <img src={globe} alt="Globe" className="clamp-[h,250px,304px] filter-none dark:invert-[0.95] dark:sepia-[0.05] dark:saturate-[1.34] dark:hue-rotate-[358deg] dark:brightness-[1.03] dark:contrast-[0.94]" draggable="false" />
 
             </div>
         </div>
