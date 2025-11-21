@@ -9,6 +9,7 @@ import { useWindowSize } from '../hooks/use-window-size';
 import ScrollReveal from '@/components/global/scroll-reveal';
 import { Stacks } from "@/features/landing/sections/stacks";
 import { useDocumentTitle } from "@/hooks/use-document-title";
+import Footer from "@/features/landing/sections/footer"
 
 export default function Home() { 
 	useDocumentTitle('titles.home');
@@ -41,6 +42,7 @@ export default function Home() {
 					<GithubCTA />
 				</ScrollReveal>
 				<VerticalBand height={band_height} count={band_count} />
+				<Footer/>
 			</GridWrapper>
 		</div>
 	);

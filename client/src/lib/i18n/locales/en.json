@@ -74,5 +74,15 @@
       "days": "{{days}} days left",
       "started-since": "Started {{minutesSinceStart}} minutes ago"
     }
-  }
+  },
+    "footer":{
+      "slogan": "Building a Better Future, Together",
+      "sections" : "Sections",
+      "team" : "Team",
+      "awards": "Awards",
+      "nuit-et-jour" : "Nuit et jour",
+      "links" : "Links",
+      "social" : "Social",
+      "rights" : "© 2025 Smart World Solutions. All rights reserved."
+    }
 }

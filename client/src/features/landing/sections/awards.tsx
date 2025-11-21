@@ -13,7 +13,7 @@ export function OurAwards() {
     const { t } = useTranslation();
     const [isMuted, setIsMuted] = useState(true);
 
-    return  <div className="w-full ">
+    return  <div className="w-full " id="awards">
 
             <div className="flex flex-col gap-3 p-10 justify-center items-center text-center border-b border-border">
                 <Badge text={t('landing.awards.badge')} />

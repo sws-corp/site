@@ -13,7 +13,7 @@ export function Stacks() {
     const { t } = useTranslation();
 
     return (
-        <div className="w-full flex flex-col items-center p-8 md:p-28 gap-8 md:gap-12">
+        <div className="w-full flex flex-col items-center p-8 md:p-28 gap-8 md:gap-12" id="nuit-et-jour">
             <div className="flex flex-col gap-3 items-center text-center">
                 <Badge text={t('landing.stacks.badge')} />
                 <h1 className="text-[20px] md:text-[24px] leading-[24px] md:leading-[29px] font-medium">{t('landing.stacks.title')}</h1>

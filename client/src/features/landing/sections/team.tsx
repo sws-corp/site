@@ -12,7 +12,7 @@ export function TeamMemberCard({ name, description }: { name: string, descriptio
 
 export function ThomasCard({ name, description, gif }: { name: string, description: string, gif: string }) {
     return (
-        <div className="flex-1 flex items-center justify-center gap-1 flex-col relative overflow-hidden group cursor-pointer">
+        <div className="flex-1 flex items-center justify-center gap-1 flex-col relative overflow-hidden group cursor-pointer scroll-mt-50" id="team">
             <h1 className="text-[24px] font-medium">{name}</h1>
             <p className="text-muted-foreground text-[16px]">{description}</p>
             <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
